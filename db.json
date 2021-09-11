@@ -1,0 +1,125 @@
+{
+    "users": [
+        {
+            "first_name": "Anna",
+            "last_name": "Smith",
+            "email": "annasmith23@gmail.com",
+            "id": 1
+        }
+    ],
+    "blogs": [
+        {
+            "userId": 1,
+            "category": "music",
+            "title": "First1",
+            "imgpath": "../BackEnd/imagesundefined",
+            "text": "Random Text",
+            "timestamp": "2021-09-08T09:58:37.641Z",
+            "likes": 50,
+            "comments": [
+                "sjfiwjeif",
+                "ewfjweferg"
+            ],
+            "id": 1
+        },
+        {
+            "userId": 1,
+            "category": "travel",
+            "title": "First1",
+            "imgpath": "../BackEnd/imagesundefined",
+            "text": "Random Text",
+            "timestamp": "2021-09-08T09:58:37.641Z",
+            "likes": 50,
+            "comments": [
+                "sjfiwjeif",
+                "ewfjweferg"
+            ],
+            "id": 2
+        },
+        {
+            "userId": 1,
+            "category": "food",
+            "title": "foods",
+            "imgpath": "../BackEnd/imagesundefined",
+            "text": "Random Text",
+            "timestamp": "2021-09-08T09:58:37.641Z",
+            "likes": 50,
+            "comments": [
+                "sjfiwjeif",
+                "ewfjweferg"
+            ],
+            "id": 3
+        },
+        {
+            "userId": 1,
+            "category": "music",
+            "title": "First1",
+            "imgpath": "../BackEnd/imagesundefined",
+            "text": "Random Text",
+            "timestamp": "2021-09-08T09:58:37.641Z",
+            "likes": 50,
+            "comments": [
+                "sjfiwjeif",
+                "ewfjweferg"
+            ],
+            "id": 4
+        },
+        {
+            "userId": 1,
+            "category": "gaming",
+            "title": "First1",
+            "imgpath": "../BackEnd/imagesundefined",
+            "text": "Random Text",
+            "timestamp": "2021-09-08T09:58:37.641Z",
+            "likes": 50,
+            "comments": [
+                "sjfiwjeif",
+                "ewfjweferg"
+            ],
+            "id": 5
+        },
+        {
+            "userId": 1,
+            "category": "cars",
+            "title": "First1",
+            "imgpath": "../BackEnd/imagesundefined",
+            "text": "Random Text",
+            "timestamp": "2021-09-08T09:58:37.641Z",
+            "likes": 50,
+            "comments": [
+                "sjfiwjeif",
+                "ewfjweferg"
+            ],
+            "id": 6
+        },
+        {
+            "userId": 1,
+            "category": "fashion",
+            "title": "First1",
+            "imgpath": "../BackEnd/imagesundefined",
+            "text": "Random Text",
+            "timestamp": "2021-09-08T09:58:37.641Z",
+            "likes": 50,
+            "comments": [
+                "sjfiwjeif",
+                "ewfjweferg"
+            ],
+            "id": 7
+        },
+        {
+            "userId": 1,
+            "category": "fashion",
+            "title": "First1",
+            "imgpath": "../BackEnd/imagesundefined",
+            "text": "Random Text",
+            "timestamp": "2021-09-08T09:58:37.641Z",
+            "likes": 50,
+            "comments": [
+                "sjfiwjeif",
+                "ewfjweferg"
+            ],
+            "id": 8
+        }
+    ]
+}
+
