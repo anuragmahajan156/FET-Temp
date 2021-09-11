@@ -1,4 +1,3 @@
-
 var loggedInUserId = window.sessionStorage.getItem("userid");
 var userBlogBtnRef = document.querySelector("#userBlogsBtn");
 var userBlogDivRef = document.querySelector("#userBlogsDiv");
@@ -12,12 +11,21 @@ userBlogBtnRef.addEventListener("click", function () {
 
 const userBlogs = async (loggedInUserId) => {
     let uri= "http://localhost:3000/blogs"; //Endpoint for the GET Request
-    uri = uri + "?userid=" + "loggedInUserId";
+    uri = uri + "?userId=" + loggedInUserId;
     const res = await fetch(uri);  // waits till its gets all data from the server and the response is stored in
     // the const res; since we used fetch we get a response Object and not just data
     const blogs = await res.json(); // .json() parses the data in res (response object) and converts it to JS Object
     //from JSON, wait first and then store all the data in the post
     var template = "";
+
+    if(blogs==""){
+        template = template + `
+        <div>
+            <p>You haven't written any blogs</p>
+</div>`
+        userBlogDivRef.innerHTML = template;
+    }
+    else{
     blogs.forEach(blogs => {
         template = template + `
         <div>
@@ -25,9 +33,8 @@ const userBlogs = async (loggedInUserId) => {
             <p>${blogs.text}</p>
             <p>$(blogs.likes)</p>
             <p>${blogs.category}</p>
-</div>
-    `
-    })
+</div> `
+        userBlogDivRef.innerHTML = template;
+    } )}
     console.log(template);
-    userBlogDivRef.innerHTML = template;
 }
